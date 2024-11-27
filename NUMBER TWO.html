@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Account</title>
+    <style>
+      /* CSS for styling the registration form */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 500px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      button {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      button {
+        margin-top: 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .error {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .form-actions {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .form-actions button {
+        width: 48%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Register Account</h1>
+      <form>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" />
+        <p class="error">User name must be at least 4 characters</p>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <p class="error">Password must be at least 4 characters</p>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" />
+        <p class="error">Passwords do not match</p>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <p class="error">Invalid email format</p>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input
+          type="text"
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="Format: XXXX-XXX-XXX"
+        />
+        <p class="error">Invalid phone number</p>
+
+        <label for="zipCode">Zip Code:</label>
+        <input
+          type="text"
+          id="zipCode"
+          name="zipCode"
+          placeholder="Use 5 or 9 digits Zip Code"
+        />
+        <p class="error">Invalid Zip Code</p>
+
+        <label for="cardType">Card Type:</label>
+        <select id="cardType" name="cardType">
+          <option value="Visa">Visa</option>
+          <option value="MasterCard">MasterCard</option>
+          <option value="Amex">American Express</option>
+        </select>
+
+        <label for="cardNumber">Card Number:</label>
+        <input
+          type="text"
+          id="cardNumber"
+          name="cardNumber"
+          placeholder="Format: 1111-2222-3333-4444"
+        />
+        <p class="error">Invalid card number format</p>
+
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="date" id="expirationDate" name="expirationDate" />
+        <p class="error">Invalid date format</p>
+
+        <div class="form-actions">
+          <button type="submit">Register</button>
+          <button type="reset">Clear Form</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

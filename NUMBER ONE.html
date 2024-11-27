@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <style>
+      /* General styling */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8f8ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .weather-app {
+        background-color: #d3d3d3;
+        border-radius: 10px;
+        width: 600px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-size: 24px;
+        color: #5a3e6a;
+        margin-bottom: 20px;
+      }
+
+      .search-box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .search-box input {
+        width: 70%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .search-box button {
+        padding: 10px 20px;
+        background-color: #5a3e6a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+
+      .search-box button:hover {
+        background-color: #7a5593;
+      }
+
+      .weather-details h2 {
+        font-size: 32px;
+        margin: 10px 0;
+      }
+
+      .current-weather {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      .current-weather .temperature {
+        font-size: 48px;
+        margin-right: 10px;
+      }
+
+      .current-weather .weather-icon {
+        width: 50px;
+      }
+
+      .forecast {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .forecast .day {
+        text-align: center;
+      }
+
+      .forecast .day img {
+        width: 30px;
+        height: 30px;
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 12px;
+      }
+
+      footer a {
+        color: #5a3e6a;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="weather-app">
+      <h1>Welcome to our Weather application</h1>
+      <div class="search-box">
+        <input type="text" placeholder="Enter city name" />
+        <button>SEARCH</button>
+      </div>
+      <div class="weather-details">
+        <h2>Paris</h2>
+        <div class="current-weather">
+          <span class="temperature">12°C</span>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+            alt="Cloudy Icon"
+            class="weather-icon"
+          />
+        </div>
+        <p>Tuesday 14.40, scattered clouds</p>
+        <p>Humidity: 66, Wind Speed: 4.3</p>
+      </div>
+      <div class="forecast">
+        <div class="day">
+          <p>Mon</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+            alt="Weather Icon"
+          />
+          <p>15° / 19°</p>
+        </div>
+        <div class="day">
+          <p>Tue</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+            alt="Weather Icon"
+          />
+          <p>15° / 19°</p>
+        </div>
+        <div class="day">
+          <p>Wed</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+            alt="Weather Icon"
+          />
+          <p>15° / 19°</p>
+        </div>
+        <div class="day">
+          <p>Thu</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+            alt="Weather Icon"
+          />
+          <p>15° / 19°</p>
+        </div>
+        <div class="day">
+          <p>Fri</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+            alt="Weather Icon"
+          />
+          <p>15° / 19°</p>
+        </div>
+        <div class="day">
+          <p>Sat</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+            alt="Weather Icon"
+          />
+          <p>15° / 19°</p>
+        </div>
+        <div class="day">
+          <p>Sun</p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+            alt="Weather Icon"
+          />
+          <p>15° / 19°</p>
+        </div>
+      </div>
+      <footer>
+        <p>
+          Coded by <a href="#">Remish Mboya</a>, hosted on
+          <a href="#">Netlify</a>. The design was done using
+          <a href="#">Figma</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
